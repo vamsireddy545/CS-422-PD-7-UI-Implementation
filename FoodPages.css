@@ -1,0 +1,259 @@
+/* Set the background color and the font of the entire page */
+body {
+    background-color: rgba(239, 241, 243, 1);
+    font-family: 'Comfortaa';
+    font-size: 22px;
+}
+
+/* Get rid of the lines that come up under hyperlinks. */
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 50px;
+    color: #de6f52;
+}
+
+#middle-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+#back-arrow-btn {
+    font-size: 48px;
+}
+
+#search-and-sort {
+    display: flex;
+    flex-direction: row;
+}
+
+#search {
+    border-radius: 10px;
+    background-color: #d8b4a0;
+    padding: 20px;
+    flex-grow: 2;
+    min-width: 70px;
+}
+
+#sort {
+    border-radius: 10px;
+    background-color: #d8b4a0;
+    padding: 20px;
+}
+
+#profile-and-cart {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Now, everything below is dedicated to displaying the food and its information. */
+
+/* The grid div has two divs, one holding the top two foods, and the bottom two foods.
+So, these two divs should be displayed as a column, and centered along the grid's cross axis, the x-axis. */
+#grid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Adjusting the layout of the top and bottom rows. */
+#top-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+#bottom-two {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+
+/* Adjusting the layout of each individual grid element. */
+
+/* This section is for the top-left element. */
+#top-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #223843;
+    padding: 20px;
+}
+
+#food-1-reviews-desc-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#food-1-reviews-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#food-1-desc {
+    color: white;
+}
+
+#food-1-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#food-1 {
+    color: #de6f52;
+}
+
+/* This section is for the top-right element. */
+
+#top-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #223843;
+    padding: 20px;
+}
+
+#food-2-reviews-desc-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#food-2-reviews-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#food-2-desc {
+    color: white;
+}
+
+#food-2-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#food-2 {
+    color: #de6f52;
+}
+
+/* Bottom-left grid element. */
+
+#bottom-left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #223843;
+    padding: 20px;
+}
+
+#food-3-reviews-desc-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#food-3-reviews-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#food-3-desc {
+    color: white;
+}
+
+#food-3-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#food-3 {
+    color: #de6f52;
+}
+
+/* Bottom-right grid element. */
+
+#bottom-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    background-color: #223843;
+    padding: 20px;
+}
+
+#food-4-reviews-desc-add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#food-4-reviews-desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#food-4-desc {
+    color: white;
+}
+
+#food-4-add-to-cart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 50px;
+}
+
+#food-4 {
+    color: #de6f52;
+}

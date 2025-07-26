@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Review</title>
+    <link rel="stylesheet" href="Review.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("back-arrow-btn").addEventListener("click", function(){
+                window.history.back();
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div id="root">
+    <div id="top-row">
+        <a href="Welcome.html">
+            <div id="title">
+                Tastebase
+            </div>
+        </a>
+    </div>
+    <div id="middle-row">
+        <div id="back-arrow-btn">
+            &#60;
+        </div>
+        &nbsp;
+        <div id="title2">
+            Review
+        </div>
+        <div id="profile-and-cart">
+            <a href="Account.html">
+                <div id="profile-and-text">
+                    <div id="profile-icon">
+                        <img src="assets\images\profile-icon.png" />
+                    </div>
+                    <div id="profile-text">
+                        Profile
+                    </div>
+                </div>
+            </a>
+            <a href="Cart.html">
+                <div id="cart-and-text">
+                    <div id="cart-icon">
+                        <img src="assets\images\cart.png" />
+                    </div>
+                    <div id="cart-text">
+                        Cart
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <label>
+    <center><textarea id="my-textarea" cols="70" rows="15" placeholder="Type your review..." style="background-color:#223843;"></textarea></center>
+    </label>
+    <center><div id="star-rating">
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+        <span class="star">&#9733;</span>
+    </div></center>
+    <script>
+        const stars = document.querySelectorAll('.star');
+
+        for (let i = 0; i < stars.length; i++) {
+            stars[i].addEventListener('click', function() {
+                for (let j = 0; j < stars.length; j++) {
+                    if (j <= i) {
+                        stars[j].classList.add('selected');
+                    } else {
+                        stars[j].classList.remove('selected');
+                    }
+                }
+            });
+        }
+    </script>
+    <center><button type="submit" id="submit-btn" >Submit</button></center>
+    <script>
+        document.getElementById("submit-btn").addEventListener("click", function() {
+            window.history.back();
+        });
+    </script>
+</div>
+</body>
+
+
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Account</title>
+  <link rel="stylesheet" href="Account.css">
+  <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script>
+    window.addEventListener("DOMContentLoaded", function() {
+      document.getElementById("back-arrow-btn").addEventListener("click", function(){
+        window.history.back();
+      });
+    });
+  </script>
+</head>
+
+<body>
+<div id="root">
+  <div id="top-row">
+    <a href="Welcome.html">
+      <div id="title">
+        Tastebase
+      </div>
+    </a>
+  </div>
+  <div id="middle-row">
+    <div id="back-arrow-btn">
+      &#60;
+    </div>
+    &nbsp;
+    <div id="title2">
+      Account
+    </div>
+    <div id="profile-and-cart">
+      <a href="Account.html">
+        <div id="profile-and-text">
+          <div id="profile-icon">
+            <img src="assets\images\profile-icon.png" />
+          </div>
+          <div id="profile-text">
+            Profile
+          </div>
+        </div>
+      </a>
+      <a href="Cart.html">
+        <div id="cart-and-text">
+          <div id="cart-icon">
+            <img src="assets\images\cart.png" />
+          </div>
+          <div id="cart-text">
+            Cart
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div id="grid">
+    <div class="grid-item">
+      <div class="heading">
+        <h2>Account Details</h2>
+      </div>
+      <div class="para">
+        <p> Username: FoodLover123</p>
+        <p> Password: ***************</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="heading">
+        <h2>Order Status</h2>
+      </div>
+      <div class="para">
+        <p> Your Pita Chips will</p>
+        <p> arriving in approx. 2 days</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="heading">
+        <h2>Payment Info</h2>
+      </div>
+      <div class="para">
+        <p> card: **************************</p>
+      </div>
+    </div>
+    <div class="grid-item">
+      <div class="heading">
+        <h2>Recent Purchases</h2>
+      </div>
+      <div class="para">
+        <p> Pita Chips</p>
+        <p> Milkshake</p>
+        <p> Veggie Chips</p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>

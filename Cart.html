@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Cart</title>
+    <link rel="stylesheet" href="Cart.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("back-arrow-btn").addEventListener("click", function () {
+                window.history.back();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <div id="top-row">
+            <div id="back-arrow-btn">
+                &#60;
+            </div>
+            <a id="title" href="Welcome.html">
+                Tastebase
+            </a>
+            <a id="profile-and-text" href="Account.html">
+                <div id="profile-icon">
+                    <img src="assets\images\profile-icon.png" />
+                </div>
+                <div id="profile-text">
+                    Profile
+                </div>
+            </a>
+        </div>
+        <div id="sub-title">
+            Cart
+        </div>
+    </div>
+    <div id="body">
+        <div id="item-frame">
+            <img src="assets\images\burger.png" id="item-image" />
+            <div id="item">
+                <a id="item-name" href="Food1.html">
+                    Burger
+                </a>
+                <div id="item-description">
+                    Tasty Food Item!
+                </div>
+            </div>
+            <div id="item-count">
+                <div id="count-control">
+                    <div id="count">
+                        1
+                    </div>
+                    <div id="arrow">
+                        <div id="increment" onclick=incrementCount()>
+                            &#9650;
+                        </div>
+                        <div id="decrement" onclick=decrementCount()>
+                            &#9660;
+                        </div>
+                    </div>
+                </div>
+                <div id="delete" onclick=removeItem()>
+                    Delete
+                </div>
+            </div>
+        </div>
+        <div id="summary">
+            <div id="summary-header">
+                Summary
+            </div>
+            <div id="base-price">
+                <div id="cost">
+                    Burger: $5.00
+                </div>
+                <div id="subtotal">
+                    Subtotal: $5.00
+                </div>
+            </div>
+            <div id="other-cost">
+                <div id="shipping">
+                    Shipping: $2.00
+                </div>
+                <div id="tax">
+                    Tax: $0.31
+                </div>
+            </div>
+            <div id="total">
+                Total: $7.31
+            </div>
+            <a id="check-out" onclick=checkOut()>
+                Check Out
+            </a>
+        </div>
+    </div>
+</body>
+
+<script src="Cart.js"></script>
+
+</html>

@@ -1,0 +1,127 @@
+body {
+    background-color: rgba(239, 241, 243, 1);
+    font-family: 'Comfortaa';
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#title {
+    font-size: 50px;
+    color: #de6f52;
+}
+
+#title2 {
+    font-size: 30px;
+    color: #de6f52;
+}
+
+#middle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+#back-arrow {
+    font-size: 48px;
+}
+
+#search-and-sort {
+    display: flex;
+    flex-direction: row;
+}
+
+#search {
+    border-radius: 10px;
+    background-color: #d8b4a0;
+    padding: 20px;
+    flex-grow: 2;
+    min-width: 70px;
+}
+
+#sort {
+    border-radius: 10px;
+    background-color: #d8b4a0;
+    padding: 20px;
+}
+
+#profile-and-cart {
+    display: flex;
+    flex-direction: row;
+}
+
+#profile-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#cart-and-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#root textarea {
+    background-color: blue;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #de6f52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px; /* set a fixed width */
+    height: 40px; /* set a fixed height */
+}
+
+#submit-btn:hover {
+    background-color: #b75036;
+}
+
+::placeholder {
+    color: #de6f52;
+    opacity: 1;
+}
+
+:-ms-input-placeholder {
+    color: #de6f52;
+}
+
+::-ms-input-placeholder {
+    color: #de6f52;
+}
+textarea {
+    color: #de6f52;
+}
+#my-textarea {
+    border-radius: 10px;
+}
+.star {
+    font-size: 40px;
+    color: #bbb;
+    cursor: pointer;
+}
+
+.star.selected {
+    color: #de6f52;
+}

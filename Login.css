@@ -1,0 +1,133 @@
+/* Set the background color and the font of the entire page */
+body {
+    background-color: rgba(239, 241, 243, 1);
+    font-family: 'Comfortaa';
+    font-size: 22px;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: #ffffff;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+}
+
+#title {
+    font-size: 50px;
+    color: #de6f52;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#form div {
+    margin-bottom: 10px;
+}
+
+#form label {
+    display: inline-block;
+    width: 100px;
+    text-align: left;
+    margin-right: 10px;
+}
+
+#form input[type="text"],
+#form input[type="password"],
+#form input[type="checkbox"] {
+    background-color: #d8b4a0;
+    width: 200px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px #ccc;
+    color: black;
+    appearance: none;
+}
+
+#submit-btn {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #de6f52;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#submit-btn:hover {
+    background-color: #b75036;
+}
+
+#title2 {
+    font-size: 30px;
+    color: #de6f52;
+}
+
+#middle-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#back-arrow {
+    font-size: 48px;
+}
+
+#top-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.checkbox-label {
+    display: inline-flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-label::before {
+    content: "";
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: 2px solid #d86f52;
+    background-color: white;
+}
+
+.checkbox-input:checked + .checkbox-label::before {
+    background-color: #de6f52;
+}
+
+.remember-me {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.checkbox-input {
+    margin-right: 10px;
+}
+
+.checkbox-label {
+    padding-left: 5px;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+}
+.font {
+    font-size: 25px;
+}

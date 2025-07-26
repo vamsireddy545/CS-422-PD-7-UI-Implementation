@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ThankYou</title>
+    <link rel="stylesheet" href="ThankYou.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("back-arrow-btn").addEventListener("click", function () {
+                window.history.back();
+            });
+        });
+    </script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("item-one").addEventListener("click", function () {
+                window.location.href = 'Food1.html';
+            });
+        });
+    </script>
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("item-two").addEventListener("click", function () {
+                window.location.href = 'Food1.html';
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <div id="top-row">
+            <div id="back-arrow-btn">
+                &#60;
+            </div>
+            <a id="title" href="Welcome.html">
+                Tastebase
+            </a>
+            <div id="profile-and-cart">
+                <a id="profile-and-text" href="Account.html">
+                    <div id="profile-icon">
+                        <img src="assets\images\profile-icon.png" />
+                    </div>
+                    <div id="profile-text">
+                        Profile
+                    </div>
+                </a>
+                <a id="cart-and-text" href="Cart.html">
+                    <div id="cart-icon">
+                        <img src="assets\images\cart.png" />
+                    </div>
+                    <div id="cart-text">
+                        Cart
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="sub-title">
+            Thank You!
+        </div>
+    </div>
+    <div id="message">
+        Your purchase has been confirmed.<br>
+        Feel free to go back to the Tastebase homepage or<br>
+        check out other snacks we think you’ll like below.
+    </div>
+    <div id="recommend">
+        <div id="recommend-text">
+            We also think you will like...
+        </div>
+        <div id="recommend-item">
+            <div id="item-one">
+                <div id="food-1-pic">
+                    <img src="assets\images\burger.png" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div id="food-1-reviews-desc-add">
+                    <div id="food-1-reviews-desc">
+                        <a id="food-1" href="Food1.html">
+                            Food 1
+                        </a>
+                        <div id="food-1-reviews">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
+                        <div id="food-1-desc">
+                            Tasty food!
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="food-1-add-to-cart">
+                        +
+                    </div>
+                </div>
+            </div>
+            <div id="item-two">
+                <div id="food-2-pic">
+                    <img src="assets\images\burger.png" />
+                </div>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <div id="food-2-reviews-desc-add">
+                    <div id="food-2-reviews-desc">
+                        <a id="food-2" href="Food1.html">
+                            Food 2
+                        </a>
+                        <div id="food-2-reviews">
+                            &#9733;&#9733;&#9733;&#9733;&#9733;
+                        </div>
+                        <div id="food-2-desc">
+                            Tasty food!
+                        </div>
+                    </div>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <div id="food-2-add-to-cart">
+                        +
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

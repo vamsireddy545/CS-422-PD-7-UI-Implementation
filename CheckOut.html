@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CheckOut</title>
+    <link rel="stylesheet" href="CheckOut.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("back-arrow-btn").addEventListener("click", function () {
+                window.history.back();
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div id="root">
+        <div id="top-row">
+            <div id="back-arrow-btn">
+                &#60;
+            </div>
+            <a id="title" href="Welcome.html">
+                Tastebase
+            </a>
+            <div id="profile-and-cart">
+                <a id="profile-and-text" href="Account.html">
+                    <div id="profile-icon">
+                        <img src="assets\images\profile-icon.png" />
+                    </div>
+                    <div id="profile-text">
+                        Profile
+                    </div>
+                </a>
+                <a id="cart-and-text" href="Cart.html">
+                    <div id="cart-icon">
+                        <img src="assets\images\cart.png" />
+                    </div>
+                    <div id="cart-text">
+                        Cart
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div id="sub-title">
+            Check Out
+        </div>
+    </div>
+    <div id="body">
+        <div id="buy-info">
+            <div id="pay-info">
+                Payment Information
+            </div>
+            <div id="card">
+                Card #: ****************
+            </div>
+            <div id="ship-info">
+                Shipping Address
+            </div>
+            <div id="address">
+                1030 N State St Apt 37K<br>
+                Chicago IL 60610-7814 USA
+            </div>
+        </div>
+        <div id="summary">
+            <div id="summary-header">
+                Summary
+            </div>
+            <div id="base-price">
+                <div id="cost">
+                    Burger: $5.00
+                </div>
+                <div id="subtotal">
+                    Subtotal: $5.00
+                </div>
+            </div>
+            <div id="other-cost">
+                <div id="shipping">
+                    Shipping: $2.00
+                </div>
+                <div id="tax">
+                    Tax: $0.31
+                </div>
+            </div>
+            <div id="total">
+                Total: $7.31
+            </div>
+        </div>
+    </div>
+    <div id="submit-order">
+        <a id="submit-btn" href="ThankYou.html">
+            Submit Order
+        </a>
+    </div>
+</body>
+
+<script src="CheckOut.js"></script>
+
+</html>

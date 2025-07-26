@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tastebase</title>
+    <a href="Welcome.html">
+        <h1 class = "title">Tastebase</h1>
+    </a>
+    <link href="Food.css" rel ="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById("back-arrow-btn").addEventListener("click", function () {
+                window.history.back();
+            });
+        });
+    </script>
+    <script src="Food.js"></script>
+    <script src="Cart.js"></script>
+</head>
+<body>
+<div id="back-arrow-btn">
+    &#60;
+</div>
+<div id="profile-and-cart">
+    <a href="Login.html">
+        <div id="profile-and-text">
+            <div id="profile-icon">
+                <img src="assets\images\profile-icon.png" />
+            </div>
+            <div id="profile-text">
+                Profile
+            </div>
+        </div>
+    </a>
+    <a href="Cart.html">
+        <div id="cart-and-text">
+            <div id="cart-icon">
+                <img src="assets\images\cart.png" />
+            </div>
+            <div id="cart-text">
+                Cart
+            </div>
+        </div>
+    </a>
+</div>
+
+<div class="food-container">
+    <img src="assets/images/vegetarianfood.png" width="200" height="200">
+    <div class="grid">
+        <h1 class = "food">Food Item</h1>
+        <p>This food item consists of x ingredients, x minerals, x vitamins, x fat, x carbohydrates</p>
+        <div class="price">$5.67</div>
+    </div>
+    <div class="grid-1">
+<!--        <div class="quantity">-->
+<!--            <label for="quantity1">Quantity:</label>-->
+<!--            <input type="number" id="quantity1" name="quantity1" value="1" min="1" max="10">-->
+<!--        </div>-->
+        <div id="item-count">
+            <div>
+                <p> Quantity:</p>
+            </div>
+            <div id="count-control">
+                <div id="count">
+                    1
+                </div>
+                <div id="arrow">
+                    <div id="increment" onclick=incrementCount()>
+                        &#9650;
+                    </div>
+                    <div id="decrement" onclick=decrementCount()>
+                        &#9660;
+                    </div>
+                </div>
+            </div>
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;
+        <div id="food-1-add-to-cart">
+            <a id="add-to-cart" href="Cart.html">
+                Add To Cart
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="description-box">
+    <center><h2>Nutritional</h2></center>
+    <p>Nutrition Facts
+        Serving Size 4 oz (112g)
+        raw, as packaged.
+        Servings Per Container varied
+        Amount Per Serving
+        Calories 150 Calories from Fat 50
+        % Daily Value*
+        Total Fat 6g 9%
+        Saturated Fat 2.5g 13%
+        Cholesterol 70mg 23%
+        Sodium 75mg 3%
+        Total Carbohydrate 0g 0%
+        Protein 24g 48%
+        Iron 15% •
+        Not a significant source of dietary fiber,
+        sugars, vitamin A, vitamin C, and calcium
+        * Percent Daily Values are based on a 2,000-
+        calorie diet</p>
+</div>
+<script>
+    function openNewPage() {
+        window.location.href = "review.html";
+    }
+</script>
+<div class="description-box">
+    <div class="grid-box">
+        <div class="review-header">
+            <h2>Reviews</h2>
+        </div>
+        <div id="review-button">
+            <a id="review-butt" href="Review.html">
+                Leave A Review!
+            </a>
+        </div>
+    </div>
+
+    <img src="assets/images/profile-icon.png" alt="User Image" width="100" height="100">
+    <div class="review-info">
+        <div class="rating">
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+            <span class="star">&#9733;</span>
+        </div>
+        <p>The snack item was amazing</p>
+    </div>
+</div>
+</body>
+
+</html>

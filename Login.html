@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <script>
+        window.addEventListener("DOMContentLoaded", function() {
+            document.getElementById("back-arrow-btn").addEventListener("click", function(){
+                window.history.back();
+            });
+        });
+    </script>
+</head>
+
+<body>
+<div id="root">
+    <div id="top-row">
+        <a href="Welcome.html">
+            <div id="title">
+                Tastebase
+            </div>
+        </a>
+    </div>
+    &nbsp;&nbsp;
+    <div id="middle-row">
+        <div id="back-arrow-btn">
+            &#60;
+        </div>
+        <div id="title2">
+            Login
+        </div>
+        &nbsp;&nbsp;
+    </div>
+    &nbsp;&nbsp;
+    <div id="form">
+        <div>
+            <input type="text" id="username" name="username" placeholder="Username">
+        </div>
+        <div>
+            <input type="password" id="password" name="password" placeholder="Password">
+        </div>
+        <div class="remember-me">
+            <input type="checkbox" id="remember-me" name="remember-me" class="checkbox-input">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="remember-me" class="checkbox-label">Remember me</label>
+        </div>
+<!--        <button type="submit" id="submit-btn">Submit</button>-->
+        <button type="submit" id="submit-btn" onclick="goToCustomPage()">Submit</button>
+
+        <script>
+            function goToCustomPage() {
+                window.location.href = "Account.html";
+            }
+        </script>
+    </div>
+</div>
+</body>
+
+</html>
